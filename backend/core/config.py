@@ -1,5 +1,4 @@
 import os
-from secrets import token_urlsafe
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -8,7 +7,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", "sqlite://")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = token_urlsafe(16)
+    FLASK_SECRET_KEY = '0sn6ldj83kn5l6bh'
 
 # S3_BUCKET = 'rudolfkiss.com'
 # S3_REGION = 'eu-central-1'

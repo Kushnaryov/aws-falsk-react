@@ -1,7 +1,1 @@
-Docker:
-    build:
-        docker build -t react-frontend .
-    run:
-        docker run --env-file ./.env -v $(pwd)/src:/frontend/src -d -p 3000:3000 --name react-app react-frontend
-    kill:
-        docker rm react-frontend -f
+This repository is a template for building a Flask-React app and deploy it on EC2 on AWS 

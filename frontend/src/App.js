@@ -4,6 +4,7 @@ import List from "./components/List";
 import axios from 'axios';
 const axios_ = axios.create({
   baseURL: 'http://localhost:5000',
+  // baseURL: '/backend',
   headers: { 'Content-Type': 'application/json' },
 })
 
@@ -12,7 +13,7 @@ function App() {
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
-    axios_.get('/show')
+    axios_.get('/send')
       .then((response) => {
         // Work with JSON data here
         const data = [];

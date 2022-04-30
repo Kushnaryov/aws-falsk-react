@@ -34,4 +34,3 @@ def show_user():
         res[id] = {column: getattr(element, column) for column in column_names}
     res = jsonify(res)
     return res
-    

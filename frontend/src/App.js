@@ -13,7 +13,7 @@ function App() {
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
-    axios_.get('/send')
+    axios_.get('/')
       .then((response) => {
         // Work with JSON data here
         const data = [];

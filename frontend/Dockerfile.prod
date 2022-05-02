@@ -1,4 +1,4 @@
-FROM node:18-alpine3.14 as builder
+FROM node:16.15-alpine3.14 as builder
 
 
 ENV PATH /home/app/node_modules/.bin:$PATH

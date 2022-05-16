@@ -21,8 +21,8 @@ Run production mode:
 ## Application usage description
 to create db run `docker-compose exec backend python3 manage.py create_db`
 
-to test app open localhost:1337/send
+to test app open `localhost:1337/send`
 
-to add instance to db open localhost:1337/create
+to add instance to db open `localhost:1337/create`
 
-to show instances in db open localhost:1337/show
+to show instances in db open `localhost:1337/show`
